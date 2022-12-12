@@ -6,7 +6,6 @@ directory = os.getcwd()
 
 for item in os.listdir(path='./Que1'):
     if ".zip" in item:
-        # zipArchive.append("./Que1/"+ item)
         with zf.ZipFile("./Que1/"+ item,"r") as zFile:
             zFile.extractall()
 
